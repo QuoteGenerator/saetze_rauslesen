@@ -24,9 +24,8 @@ int main(){
     }    
 
     for(char c : sentence){
-        if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
-           c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U'
-        ){
+        const char lower = tolower(c);
+        if(lower == 'a' || lower == 'e' || lower == 'i' || lower == 'o' || lower == 'u'){
             anzahlVokale++;
         }
     }
